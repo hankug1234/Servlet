@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function fn_validate(){
+		var frmLogin = document.frmLgin;
+		var user_id = frmLogin.user_id.value;
+		var user_pw = frmLogin.user_pw.value;
+		
+		if((user_id.length == 0 || user_id =="")||(user_pw.length == 0 || user_pw =="")){
+			alert("user id and user pw is neccessary");
+		}else{
+			frmLogin.method = "post";
+			frmLogin.action = "login5";
+			frmLogin.submit();
+		}
+	}
+</script>
+</head>
+<body>
+	<form name="frmLgin" method ="post" action="login" encType="UTF-8">
+		<span>ID: </span><input type="text" name="user_id"><br>
+		<span>PW: </span><input type="password" name="user_pw"><br>
+		<input type="button" onClick="fn_validate()" value="login">
+		<input type="hidden" name="user_address" value="seoul"/>
+	</form>
+</body>
+</html>

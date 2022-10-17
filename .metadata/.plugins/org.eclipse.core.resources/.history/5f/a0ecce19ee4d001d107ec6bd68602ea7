@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="frmLogin" method="post" action="login4" encType="UTF-8">
+		ID:<input type="text" name="user_id"><br>
+		PW:<input type="text" name="user_pw"><br>
+		<input type="submit" value="login">
+		<input type="reset" value="reset">
+	</form>
+</body>
+</html>

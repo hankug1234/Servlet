@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;sec01.ex01.ImputServlet.java&apos; to &apos;InputServlet.java&apos;&#x0D;&#x0A;- Original project: &apos;pro6&apos;&#x0D;&#x0A;- Original element: &apos;sec01.ex01.ImputServlet.java&apos;&#x0D;&#x0A;- Renamed element: &apos;sec01.ex01.InputServlet.java&apos;" description="Rename compilation unit &apos;ImputServlet.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;sec01.ex01{ImputServlet.java" name="InputServlet.java" references="false" stamp="1665547965711" version="1.0"/>
+</session>
