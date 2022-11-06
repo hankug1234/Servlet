@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert($("#unique2").html());
+	});
+	
+	function addHtml(){
+		$("#article").html("hello"+"<br>")
+	}
+</script>
+</head>
+<body>
+	<div class="class1">hello</div>
+	<div id="unique2">jquery</div>
+	<div id="unique3">
+		<p>jquery is easy and comfortable</p>
+	</div>
+	<div>
+		<p id="article"></p>
+		<input type="button" onclick="addHtml()"/>
+	</div>
+</body>
+</html>

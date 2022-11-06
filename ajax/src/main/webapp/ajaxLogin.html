@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function fn_process(){
+		$.ajax({
+			type:"post",
+			aysnc:true,
+			dataType:"text",
+			data:{id:$("#id").val()},
+			url:"http://localhost:8081/ajax/checkId",
+			success:function(data,texStatus){$("#message").html(data);},
+			error:function(data,textStatus){alert("error occure");}
+		});
+	}
+</script>
+</head>
+<body>
+	ID: <input type="text" id="id" value=" "/><br>
+	<input type="button" value="submit" onClick="fn_process()"/>
+	<div id="message"></div>
+</body>
+</html>

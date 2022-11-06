@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	function fn_process(){
+		$.ajax({
+			type:"get",
+			dataType:"text",
+			url:"http://localhost:8081/ajax/server1",
+			data:{param:"hello jquery"},
+			success: function (data,textStatus){
+				$("#message").append(data);
+			},
+			error:function (data,textStatus){
+				alert("error occure");
+			},
+			complete:function(data,textStatus){
+				alert("job finish");
+			}
+		});
+	}
+</script>
+</head>
+<body>
+	<div id="message"></div><br>
+	<input type="button" value="send" onClick="fn_process()" />
+</body>
+</html>
